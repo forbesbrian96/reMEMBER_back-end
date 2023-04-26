@@ -18,7 +18,15 @@ public class Client {
 
     public String name;
 
-    public Integer age;
+    public String nextAppt;
+
+    public String serviceNeeded;
+
+    public String serviceOffered;
+
+    public String clientKnowledge;
+
+    public String continuedConversation;
 
      //**************************************** */
     //  Constructors
@@ -28,9 +36,13 @@ public class Client {
 
     }
 
-    public Client(String name, Integer age){
+    public Client(String name, String nextAppt, String serviceNeeded, String serviceOffered, String clientKnowledge, String continuedConversation){
         this.name = name;
-        this.age = age;
+        this.nextAppt = nextAppt;
+        this.serviceNeeded = serviceNeeded;
+        this.serviceOffered = serviceOffered;
+        this.clientKnowledge = clientKnowledge;
+        this.continuedConversation = continuedConversation;
     }
 
      //**************************************** */
@@ -53,11 +65,44 @@ public class Client {
         this.name = name;
     }
 
-    public Integer getAge(){
-        return this.age;
+    public String getNextAppt(){
+        return this.nextAppt;
     }
 
-    public void setAge(Integer age){
-        this.age = age;
+    public void setNextAppt(String nextAppt){
+        this.nextAppt = nextAppt;
     }
+
+    public String getServiceNeeded(){
+        return this.serviceNeeded;
+    }
+
+    public void setServiceNeeded(String serviceNeeded){
+        this.serviceNeeded = serviceNeeded;
+    }
+
+    public String getServiceOffered(){
+        return this.serviceOffered;
+    }
+
+    public void setServiceOffered(String serviceOffered){
+        this.serviceOffered = serviceOffered;
+    }
+
+    public String getClientKnowledge(){
+        return this.clientKnowledge;
+    }
+
+    public void setClientKnowledge(String clientKnowledge){
+        this.clientKnowledge = clientKnowledge;
+    }
+
+    public String getContinuedConversation(){
+        return this.continuedConversation;
+    }
+
+    public void setContinuedConversation(String continuedConversation){
+        this.continuedConversation = continuedConversation;
+    }
+
 }

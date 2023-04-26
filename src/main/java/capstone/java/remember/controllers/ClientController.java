@@ -53,7 +53,12 @@ public class ClientController {
     Clients.findById(id).map(client -> {
 
         client.setName(fixClient.getName());
-        client.setAge(fixClient.getAge());
+        client.setNextAppt(fixClient.getNextAppt());
+        client.setServiceNeeded(fixClient.getServiceNeeded());
+        client.setServiceOffered(fixClient.getServiceOffered());
+        client.setClientKnowledge(fixClient.getClientKnowledge());
+        client.setContinuedConversation(fixClient.getContinuedConversation());
+        Clients.save(client);
         return client;
 
     });
